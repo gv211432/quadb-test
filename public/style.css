@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    -webkit-font-smoothing: antialiased;
+    background: rgb(25, 29, 40);
+}
+
+/* =========================Starting Header============================= */
+
+/* head content is header wrapper  */
+
+#head-content {
+    display: grid;
+    position: relative;
+}
+
+#head-content #img-content {
+    width: 500px;
+    vertical-align: middle;
+
+}
+
+#head-content #buttons-inr-btc {
+    width: 300px;
+    grid-area: buttons;
+    text-align: center;
+    margin-top: 35px;
+    vertical-align: middle;
+}
+
+#head-content #buttons-inr-btc p {
+    display: inline;
+    padding: 8px;
+    width: 60px;
+    color: white;
+    background-color: rgb(46, 50, 65);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#head-content #buttons-inr-btc p:nth-child(1) {
+    margin-right: 15px;
+}
+
+#head-content #buttons-inr-btc p:hover {
+    background-color: rgb(82, 82, 82);
+}
+
+#head-content #circle {
+    grid-area: circleO;
+}
+
+#head-content #circle p {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid rgb(61, 198, 193);
+    color: rgb(61, 198, 193);
+    vertical-align: middle;
+    margin-top: 25px;
+    margin-right: 8px;
+}
+
+#head-content #telegram {
+    grid-area: telegram;
+}
+
+#head-content #telegram p {
+    color: white;
+    width: 200px;
+    padding: 6px 6px 7px 0px;
+    vertical-align: middle;
+    border-radius: 8px;
+    font-weight: 700;
+    background-color: rgb(61, 198, 193);
+    vertical-align: middle;
+}
+
+
+#head-content #toggle-me {
+    padding: 20px;
+    grid-area: toggle-me;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(46, 50, 65);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(46, 50, 65);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(46, 50, 65);
+}
+
+input:checked+.slider:before {
+    background-color: rgb(61, 198, 193);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#head-content {
+    display: grid;
+    grid: 'logo-img buttons circleO telegram toggle-me';
+}
+
+/* ============================Ending Header================================= */
+
+
+
+/* =====================Table Styles==================================== */
+
+.table-wrapper,
+#head-content {
+    margin: 20px 30px 30px;
+}
+
+.fl-table {
+    font-size: 13px;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.fl-table td,
+.fl-table th {
+    text-align: center;
+    padding: 0;
+}
+
+.fl-table td {
+    color: white;
+    background-color: rgb(46, 50, 65);
+    font-size: 14px;
+    padding: 12px 0px;
+    font-weight: 1000;
+}
+
+.fl-table tbody td:nth-child(1) {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.fl-table tbody td:nth-child(6) {
+    border-radius: 0px 6px 6px 0px;
+}
+
+.fl-table thead th {
+    padding: 0px;
+    color: rgb(158, 158, 158);
+    font-weight: 1000;
+    height: 2px;
+}
+
+/* =====================Ending Table========================= */

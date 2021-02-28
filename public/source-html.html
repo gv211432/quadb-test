@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoldInfo.com</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- =================Header starts============================== -->
+    <br>
+    <div id="head-content">
+        <div id="img-content">
+            <img src="./holdinfo.png" alt="HOLDINFO.COM">
+        </div>
+        <div id="buttons-inr-btc">
+            <span>
+                <p>INR<p1 style="font-size: 10px;">&#9660</p1>
+                </p>
+                <p>BTC<p1 style="font-size: 10px;">&#9660</p1>
+                </p>
+            </span>
+        </div>
+        <div id="circle">
+            <p>58</p>
+        </div>
+        <div id="telegram">
+            <p> <img src="./tele.png" alt="telegram" style="color: rgb(61, 198, 193);
+                vertical-align: middle; padding-left:6px ;">
+                Connect Telegram</p>
+        </div>
+        <div id="toggle-me">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+        <!-- ========================Header Ends======================= -->
+    <br>
+        <!-- =======================Table starts============================= -->
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                ${heading(dataList[0])}
+            </thead>
+            <tbody>
+                ${dataList.reduce((html, object) => (html + datarow(object)), '')}
+            <tbody>
+        </table>
+    </div>
+        <!-- =============================Table Ends================================= -->
+</body>
+
+</html>
